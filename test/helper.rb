@@ -1,5 +1,7 @@
 require 'rubygems'
+#require 'mocha' # need to make this work
 require 'bundler'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -13,6 +15,7 @@ require 'shoulda'
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'WriteMyCode'
+require 'RObjC/RObjC'
 
 class Test::Unit::TestCase
 end

@@ -15,13 +15,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "WriteMyCode"
   gem.homepage = "http://github.com/Alej/WriteMyCode"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{set of scripts that generate code}
+  gem.description = %Q{Set of scripts that generate code. Currently supports the XCode IDE and Objective-C Language}
   gem.email = "l.mephisto@gmail.com"
   gem.authors = ["Alejandro Rodriguez"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
+  gem.add_development_dependency 'mocha', '>= 0.9.12'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
 end
 Jeweler::RubygemsDotOrgTasks.new
